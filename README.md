@@ -1,6 +1,6 @@
 # Gatsby Multilingual Blog Template
 
-Bootstraperd with:
+Bootstrapped with:
 
 - MDX
 - tailwindcss
