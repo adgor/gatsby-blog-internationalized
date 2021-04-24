@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "28 nentori",
-    siteUrl: `https://gatsby-theme-i18n-react-i18next.netlify.app`,   
+    title: "Multilingual Blog",
+    siteUrl: `https://gatsby-theme-i18n-react-i18next.netlify.app`,
     description: `Default example for i18n with react-i18next`,
-    author: `LekoArts`,
+    author: `adgor`,
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
