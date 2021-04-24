@@ -1,17 +1,18 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-import { useTranslation } from "react-i18next"
-import { LocalizedLink, LocalesList } from "gatsby-theme-i18n"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
+import * as React from "react";
+import { graphql } from "gatsby";
+import { useTranslation } from "react-i18next";
+import { LocalizedLink, LocalesList } from "gatsby-theme-i18n";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 const Index = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <Layout>
       <Seo title={t("home")} />
-      <h1 className='bg-red-400 '>{t("helloWorld")}</h1>
-      <p>{t("indexNote")}</p>
+      <div className="p-4 text-white transition duration-500 bg-blue-500 dark:bg-gray-900">
+        <h1 className="bg-red-400 dark:bg-gray-600 ">{t("helloWorld")}</h1>
+        <p>{t("indexNote")}</p>
+      </div>
       <p>
         <LocalizedLink to="/page-2/">{t("secondPageLink")}</LocalizedLink>
       </p>
@@ -40,10 +41,10 @@ const Index = ({ data }) => {
       <h2>{t("overviewLang")}</h2>
       <LocalesList />
     </Layout>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
 
 export const query = graphql`
   query($locale: String!) {
@@ -63,4 +64,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
